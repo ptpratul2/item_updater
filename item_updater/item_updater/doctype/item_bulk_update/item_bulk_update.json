@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-02 09:43:38.237145",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "excel_file",
+  "status_log",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "description": "in excel the first column is \u201citem_code\u201d and the second column is \u201cis_stock_item\u201d.",
+   "fieldname": "excel_file",
+   "fieldtype": "Attach",
+   "label": "Excel File"
+  },
+  {
+   "fieldname": "status_log",
+   "fieldtype": "Small Text",
+   "label": "Status Log"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Item Bulk Update",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-02 09:57:19.102448",
+ "modified_by": "Administrator",
+ "module": "Item Updater",
+ "name": "Item Bulk Update",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
